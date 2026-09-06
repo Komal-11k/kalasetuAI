@@ -1,0 +1,47 @@
+[
+    {
+      "name": "PM Vishwakarma Yojana",
+      "description": "Support scheme for traditional artisans and craftspeople across 18 trades.",
+      "benefits": "Skill training, toolkit incentive up to ₹15,000, collateral-free loans up to ₹3 lakh at concessional interest.",
+      "eligibility": "Artisan/craftsperson working with hands and tools, engaged in one of 18 specified trades.",
+      "documents_required": ["Aadhaar Card", "Proof of trade/occupation", "Bank account details"],
+      "applicable_states": ["all"],
+      "applicable_crafts": ["handicraft", "weaving", "pottery", "woodwork", "bamboo", "metalwork", "all"]
+    },
+    {
+      "name": "MUDRA Loan Scheme (Shishu/Kishor/Tarun)",
+      "description": "Micro-finance scheme providing loans to small/micro business owners including artisans.",
+      "benefits": "Loans from ₹50,000 up to ₹10 lakh without collateral, depending on business stage.",
+      "eligibility": "Non-corporate, non-farm small/micro enterprises including artisans and craft businesses.",
+      "documents_required": ["Aadhaar Card", "Business proof", "Bank account details", "Passport size photo"],
+      "applicable_states": ["all"],
+      "applicable_crafts": ["all"]
+    },
+    {
+      "name": "National Handicrafts Development Programme (NHDP)",
+      "description": "Comprehensive scheme for holistic development of handicrafts sector artisans.",
+      "benefits": "Design and technology upgradation, marketing support, financial assistance for infrastructure.",
+      "eligibility": "Registered artisans/artisan groups engaged in handicraft production.",
+      "documents_required": ["Artisan Card", "Aadhaar Card", "Group registration (if applicable)"],
+      "applicable_states": ["all"],
+      "applicable_crafts": ["handicraft", "weaving", "embroidery", "woodwork", "pottery"]
+    },
+    {
+      "name": "Stand-Up India Scheme",
+      "description": "Bank loans for women and SC/ST entrepreneurs setting up greenfield enterprises.",
+      "benefits": "Loans between ₹10 lakh and ₹1 crore for setting up new enterprises.",
+      "eligibility": "Women entrepreneurs or SC/ST entrepreneurs above 18 years, for new (greenfield) enterprises.",
+      "documents_required": ["Aadhaar Card", "Caste certificate (if applicable)", "Business plan", "Bank account details"],
+      "applicable_states": ["all"],
+      "applicable_crafts": ["all"]
+    },
+    {
+      "name": "Rajiv Gandhi Shilpi Swasthya Bima Yojana",
+      "description": "Health insurance scheme for artisans and their families.",
+      "benefits": "Health insurance coverage up to ₹2 lakh per family per year.",
+      "eligibility": "Artisans registered under the handicraft sector with valid artisan card.",
+      "documents_required": ["Artisan Card", "Aadhaar Card", "Family details"],
+      "applicable_states": ["all"],
+      "applicable_crafts": ["handicraft", "weaving", "pottery", "woodwork", "bamboo", "metalwork"]
+    }
+  ]
