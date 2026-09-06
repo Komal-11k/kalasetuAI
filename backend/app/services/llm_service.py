@@ -1,11 +1,13 @@
 import google.generativeai as genai
 from app.config import GEMINI_API_KEY
+import PIL.Image
+import io
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-3.6-flash")
 
-def generate_catalog_listing(voice_text: str, language: str = "en"):
-    prompt = f"""You are helping an artisan create a product listing from their spoken description.
+def generate_catalog_listing(voice_text: str, language: str = "en", image_bytes: bytes = None):
+    prompt = f"""You are helping an artisan create a product listing from their spoken description and a photo of the product.
 
 Artisan's description (in {language}): "{voice_text}"
 
@@ -19,5 +21,11 @@ Generate a structured product listing as JSON with these exact fields:
 
 Respond ONLY with valid JSON, no other text."""
 
-    response = model.generate_content(prompt)
+    content = [prompt]
+
+    if image_bytes:
+        image = PIL.Image.open(io.BytesIO(image_bytes))
+        content.append(image)
+
+    response = model.generate_content(content)
     return response.text
