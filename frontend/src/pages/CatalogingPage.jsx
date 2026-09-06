@@ -30,9 +30,7 @@ function CatalogingPage() {
       formData.append('language', language)
       if (photo) formData.append('photo', photo)
 
-      const res = await apiClient.post('/api/catalog/generate', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      })
+      const res = await apiClient.post('/api/catalog/generate', formData)
       setListing(res.data)
     } catch (err) {
       setError(err.response?.data?.detail || 'Something went wrong')
